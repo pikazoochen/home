@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   $('.nav_home,a[href="#"]').click(function (e) {
     e.preventDefault();
+    navLinks.classList.remove("show");
     $('html , body').animate({
       scrollTop: $('body').offset().top,
     }, 900);
@@ -22,12 +23,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   $('.nav_about,a[href="#about"]').click(function (e) {
     e.preventDefault();
+    navLinks.classList.remove("show");
     $('#about').show();
     $('html , body').animate({
       scrollTop: $('#about').offset().top - 104,
     }, 900);
   });
 
+  $('.nav_blog,a[href="https://pikazoochen.blogspot.com/"]').click(function (e) {
+    e.preventDefault();
+    navLinks.classList.remove("show");
+    window.open("https://pikazoochen.blogspot.com/");
+  });
+
+  $('.nav_shop,a[href="https://8uifr1-d4.myshopify.com/"]').click(function (e) {
+    e.preventDefault();
+    navLinks.classList.remove("show");
+    window.open("https://8uifr1-d4.myshopify.com/");
+  });
 
   //Carousel
   const slides = document.querySelectorAll(".carousel-slide");
