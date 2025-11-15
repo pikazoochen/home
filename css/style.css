@@ -281,18 +281,19 @@ a {
 
 .about_flex {
   display: flex;
-  gap: 2%;
+  gap: 3%;
+  align-items: center;
 }
 
 .about_img img {
-  width: 150px;
+  width: 100%;
 }
 
 .about_text p {
   margin: 0;
 }
 
-.about_text ul {
+.sns_icons{
   display: flex;
   gap: 1em;
   list-style: none;
@@ -304,13 +305,19 @@ a {
   #about {
     width: 100%;
   }
+  .about_text_bottom{
+    padding:0 4%;
+  }
+}
 
+@media (max-width: 650px) {
   .about_flex {
     flex-direction: column;
-    padding: 0 4%;
   }
-
-  .about_img img {
-    width: 50%;
+  .about_text_top{
+    padding:0 4%;
+  }
+  .about_text_bottom{
+    padding:0 4%;
   }
 }
