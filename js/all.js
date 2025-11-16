@@ -30,13 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 900);
   });
 
-  $('.nav_blog,a[href="https://pikazoochen.blogspot.com/"]').click(function (e) {
+  $('.nav_blog').click(function (e) {
     e.preventDefault();
     navLinks.classList.remove("show");
     window.open("https://pikazoochen.blogspot.com/");
   });
 
-  $('.nav_shop,a[href="https://8uifr1-d4.myshopify.com/"]').click(function (e) {
+  $('.nav_shop').click(function (e) {
     e.preventDefault();
     navLinks.classList.remove("show");
     window.open("https://8uifr1-d4.myshopify.com/");

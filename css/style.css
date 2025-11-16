@@ -293,7 +293,7 @@ a {
   margin: 0;
 }
 
-.sns_icons{
+.sns_icons {
   display: flex;
   gap: 1em;
   list-style: none;
@@ -301,12 +301,18 @@ a {
   padding: 0;
 }
 
+.sns_icons li:hover{
+  fill: linear-gradient(45deg, #667eea, #764ba2);
+  transition: right center 0.3s ease;
+}
+
 @media (max-width: 768px) {
   #about {
     width: 100%;
   }
-  .about_text_bottom{
-    padding:0 4%;
+
+  .about_text_bottom {
+    padding: 0 4%;
   }
 }
 
@@ -314,10 +320,37 @@ a {
   .about_flex {
     flex-direction: column;
   }
-  .about_text_top{
-    padding:0 4%;
+
+  .about_text_top {
+    padding: 0 4%;
   }
-  .about_text_bottom{
-    padding:0 4%;
+
+  .about_text_bottom {
+    padding: 0 4%;
   }
+}
+
+
+
+/* 特效：hover後打字效果  */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  transition: width 2s steps(40, end);
+}
+
+.container:hover .typewriter {
+  width: 100%;
+}
+
+/* 特效：漸變背景動畫 */
+.gradient-hover {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  background-size: 200% 200%;
+  transition: background-position 0.3s ease;
+}
+
+.gradient-hover:hover {
+  background-position: right center;
 }
