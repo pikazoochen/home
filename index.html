@@ -19,11 +19,13 @@
       <!-- 共用選單 -->
       <nav id="nav-links">
         <ul>
-          <li class="nav_home"><a href="#">HOME</a></li>
-          <li class="nav_about"><a href="#about">ABOUT</a></li>
-          <li class="nav_portfolio"><a href="#portfolio">PORTFOLIO</a></li>
-          <li class="nav_blog"><a href="https://pikazoochen.blogspot.com/" target="_blank">BLOG</a></li>
-          <li class="nav_shop"><a href="https://8uifr1-d4.myshopify.com/" target="_blank">SHOP</a></li>
+          <li id="nav_home"><a href="#">HOME</a></li>
+          <li id="nav_about"><a href="#about">ABOUT</a></li>
+          <li id="nav_contact"><a href="#contact">CONTACT</a></li>
+          <li id="nav_portfolio"><a href="#portfolio">PORTFOLIO</a></li>
+          <li id="nav_blog"><a href="https://pikazoochen.blogspot.com/" target="_blank">BLOG</a></li>
+          <li id="nav_shop"><a href="https://8uifr1-d4.myshopify.com/" target="_blank">SHOP</a></li>
+          <li id="nav_language">EN</li>
         </ul>
       </nav>
     </header>
@@ -70,182 +72,7 @@
 
 
 
-  <!-- Works -->
-  <style>
-    #portfolio {
-      overflow: hidden;
-      width: 100%;
-      height: auto;
-      margin: 0px;
-      padding: 0px;
-    }
-
-    .gallery {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      position: relative;
-      width: 100%;
-    }
-
-    .gallery li {
-      position: relative;
-      float: left;
-      overflow: hidden;
-      width: 25%;
-      width: -webkit-calc(100% / 4);
-      width: calc(100% / 4);
-    }
-
-    .gallery li>div {
-      display: block;
-      width: 100%;
-      cursor: pointer;
-    }
-
-    .gallery li>div img {
-      display: block;
-      width: 100%;
-      cursor: pointer;
-      max-width: 100%;
-      -webkit-transition: all 3s ease;
-      -moz-transition: all 3s ease;
-      -ms-transition: all 3s ease;
-      -o-transition: all 3s ease;
-      transition: all 3s ease;
-    }
-
-    .gallery li>div .workhover {
-      position: absolute;
-      left: 10px;
-      top: 10px;
-      right: 10px;
-      bottom: 10px;
-      background: rgba(255, 255, 255, 0.9);
-      vertical-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      -ms-align-items: center;
-      align-items: center;
-      text-align: center;
-      opacity: 0;
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      transition: all 1s ease;
-    }
-
-    .gallery li>div p {
-      font-size: 12px;
-      font-weight: 400;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin: 20px 0;
-      padding: 0px;
-      text-align: center;
-      display: block;
-      width: 100%;
-      position: relative;
-      padding: 0 10px;
-      color: black;
-    }
-
-    .gallery li>div h3 {
-      width: 100%;
-      color: #000;
-      padding: 0 10px;
-      font-size: 19px;
-      font-weight: 600;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-    }
-
-    .gallery li>div h3::after {
-      content: "";
-      width: 20px;
-      margin: auto;
-      height: 3px;
-      margin: 20px auto;
-      margin-bottom: 0px;
-      background: #AEAEAE;
-      display: block;
-    }
-
-    .gallery li>div:hover .workhover {
-      opacity: 1;
-    }
-
-    .gallery li>div:hover img {
-      -webkit-transform: scale(1.25);
-      -moz-transform: scale(1.25);
-      -ms-transform: scale(1.25);
-      -o-transform: scale(1.25);
-      transform: scale(1.25);
-    }
-
-    .gallery #worktext {
-      margin-top: 38%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
-
-    li>a .gallery .gallery:hover {
-      -webkit-transform: scale(1.25);
-      -moz-transform: scale(1.25);
-      -ms-transform: scale(1.25);
-      -o-transform: scale(1.25);
-      transform: scale(1.25);
-    }
-
-    @media screen and (max-width: 1300px) {
-      .gallery li {
-        width: 33.3333333%;
-        width: -webkit-calc(100% / 3);
-        width: calc(100% / 3);
-      }
-    }
-
-    @media screen and (max-width: 900px) {
-      .gallery li {
-        width: 50%;
-        width: -webkit-calc(100% / 2);
-        width: calc(100% / 2);
-      }
-    }
-
-    @media screen and (max-width: 500px) {
-      .gallery li {
-        width: 100%;
-      }
-    }
-
-    .gallery li>div a.open-post {
-      font-size: 10px;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 10px;
-      left: 50%;
-      top: 100%;
-      padding: 10px 7px 10px 15px;
-      text-align: center;
-      color: #000;
-      border: 2px solid #000;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      -webkit-transition: border-color .3s ease-in-out, top .3s ease-in-out, letter-spacing .3s ease-in-out;
-      -moz-transition: border-color .3s ease-in-out, top .3s ease-in-out, letter-spacing .3s ease-in-out;
-      transition: border-color .3s ease-in-out, top .3s ease-in-out, letter-spacing .3s ease-in-out;
-    }
-
-    .gallery li>div a.open-post:hover {
-      letter-spacing: 5px;
-      color: #000;
-      border-color: #36393c;
-    }
-  </style>
+  <!-- Portfolio -->
   <section id="portfolio">
     <h2 class="section_title">PORTFOLIO</h2>
     <ul class="gallery">
@@ -256,7 +83,8 @@
             <div id="worktext">
               <h3>家家酒</h3>
               <p>SELECTED ILLUSTRATORS 2020</p>
-              <a href="https://www.behance.net/gallery/93103397/Make-Believe" target="_blank" class="open-post">View project</a>
+              <a href="https://www.behance.net/gallery/93103397/Make-Believe" target="_blank" class="open-post">View
+                project</a>
             </div>
           </div>
         </div>
@@ -269,7 +97,8 @@
             <div id="worktext">
               <h3>皮皮的飛船</h3>
               <p>personal</p>
-              <a href="https://www.behance.net/gallery/71158045/-Pippis-Airship" target="_blank" class="open-post">View project</a>
+              <a href="https://www.behance.net/gallery/71158045/-Pippis-Airship" target="_blank" class="open-post">View
+                project</a>
             </div>
           </div>
         </div>
@@ -282,14 +111,15 @@
             <div id="worktext">
               <h3>石虎樂園</h3>
               <p>personal</p>
-              <a href="https://www.behance.net/gallery/80346711/-Happy-Taiwan-Leopard-Cat" target="_blank" class="open-post">View project</a>
+              <a href="https://www.behance.net/gallery/80346711/-Happy-Taiwan-Leopard-Cat" target="_blank"
+                class="open-post">View project</a>
             </div>
           </div>
         </div>
       </li>
 
       <li class="plus">
-        <div class="work4 work">
+        <div class="work4">
           <img src="img/portfolio/portfolio_04.png">
           <div class="workhover">
             <div id="worktext">
@@ -302,7 +132,7 @@
       </li>
 
       <li class="plus">
-        <div class="work5 work">
+        <div class="work5">
           <img src="img/portfolio/portfolio_05.png">
           <div class="workhover">
             <div id="worktext">
@@ -315,39 +145,56 @@
       </li>
 
       <li class="plus">
-        <div class="work6 work">
+        <div class="work6">
           <img src="img/portfolio/portfolio_06.png">
           <div class="workhover">
             <div id="worktext">
               <h3>愚人船</h3>
               <p>Personal</p>
-              <a href="https://www.behance.net/gallery/55709927/Ship-of-Fools" target="_blank" class="open-post">View project</a>
+              <a href="https://www.behance.net/gallery/55709927/Ship-of-Fools" target="_blank" class="open-post">View
+                project</a>
             </div>
           </div>
         </div>
       </li>
 
       <li class="plus">
-        <div class="work7 work">
+        <div class="work7">
           <img src="img/portfolio/portfolio_07.png">
           <div class="workhover">
             <div id="worktext">
               <h3>Utopia</h3>
               <p>personal</p>
-              <a href="https://www.behance.net/gallery/55714483/Utopia" target="_blank" class="open-post">View project</a>
+              <a href="https://www.behance.net/gallery/55714483/Utopia" target="_blank" class="open-post">View
+                project</a>
             </div>
           </div>
         </div>
       </li>
 
       <li class="plus">
-        <div class="work8 work">
+        <div class="work8">
           <img src="img/portfolio/portfolio_08.png">
           <div class="workhover">
             <div id="worktext">
               <h3>Maybe it stays in</h3>
               <p>personal</p>
-              <a href="https://www.behance.net/gallery/55710513/Maybe-it-stays-in" target="_blank" class="open-post">View project</a>
+              <a href="https://www.behance.net/gallery/55710513/Maybe-it-stays-in" target="_blank"
+                class="open-post">View project</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="plus">
+        <div class="work9">
+          <img src="img/portfolio/portfolio_09.png">
+          <div class="workhover">
+            <div id="worktext">
+              <h3>A trip</h3>
+              <p>personal</p>
+              <a href="https://www.behance.net/gallery/57406185/A-Trip" target="_blank" class="open-post">View
+                project</a>
             </div>
           </div>
         </div>
@@ -357,7 +204,7 @@
 
   <!-- About -->
   <section id="about" style="display: none;">
-    <h2 class="section_title">About </h2>
+    <h2 class="section_title">About</h2>
 
     <div class="about_flex">
       <div class="about_img">
@@ -389,66 +236,76 @@
         波隆那，義⼤利，波隆那書展 歐盟《繪製早期表演藝術美學地圖》計畫「兒童觀眾」國際插畫比賽 入選，2020<br><br>
 
         <strong>出版紀錄 (Publications)</strong><br>
-        作品：《Make Believe》。載於： Roberto Frabetti 主編，《Children Spectators: Il Bambino Spettatore》。義大利波隆那：Edizioni
-        Pendragon，2023。頁碼： 75；備註：作品被選用為書籍封面圖像。<br><br>
+        作品：《Make Believe》。載於： Roberto Frabetti 主編，
+        <a href="https://www.pendragon.it/catalogo/produzione-varia/varia/il-bambino-spettatore-children-spectator-detail.html"
+          target="_blank" style="color:#74957A;">《Children Spectators: Il Bambino Spettatore》
+        </a>
+        ISBN：978-8833645599，義大利波隆那：Edizioni Pendragon，2023。頁碼： 75；備註：作品被選用為書籍封面圖像。<br><br>
       </p>
 
-      <ul class="sns_icons">
-        <li>
-          <a href="https://www.facebook.com/PikazooChen/" target="_blank">
-            <svg class="icon" width="50" height="49" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M24.146 12.073C24.146 5.40365 18.7424 0 12.073 0C5.40365 0 0 5.40365 0 12.073C0 18.0988 4.41493 23.0935 10.1866 24V15.563H7.11968V12.073H10.1866V9.41306C10.1866 6.38751 11.9878 4.71627 14.7466 4.71627C16.0678 4.71627 17.4494 4.95189 17.4494 4.95189V7.92146H15.9267C14.4273 7.92146 13.9594 8.85225 13.9594 9.8069V12.073H17.3077L16.7723 15.563H13.9594V24C19.7311 23.0935 24.146 18.0988 24.146 12.073Z"
-                fill="#333333"></path>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/pikazoochen/" target="_blank">
-            <svg class="icon" width="50" height="49" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_4527_91515)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M5.39661 0.0436591C5.68114 0.0200558 7.14491 0.0148926 12.1499 0.0148926H16.0518C18.8638 0.0197783 19.0238 0.0429532 19.558 0.120312L19.589 0.124795C20.745 0.291493 21.7149 0.752495 22.5079 1.51001C22.9523 1.93764 23.2584 2.35586 23.5341 2.91588C23.87 3.60001 24.0351 4.24725 24.1107 5.20982C24.1269 5.41635 24.1343 8.70311 24.1343 11.9921C24.1343 15.2805 24.1275 18.5733 24.1112 18.7799C24.0366 19.7271 23.8715 20.3799 23.546 21.0511C23.2283 21.709 22.7708 22.2896 22.2055 22.7524C21.6402 23.2152 20.9806 23.549 20.2729 23.7305C19.752 23.8651 19.2809 23.9283 18.4695 23.9665C18.18 23.9812 15.1521 23.9849 12.1243 23.9849C9.09642 23.9849 6.07041 23.9757 5.77353 23.9628C5.07281 23.9296 4.52698 23.8595 4.03279 23.7323C2.60553 23.3635 1.39402 22.3751 0.75968 21.0585C0.427759 20.3707 0.271019 19.7419 0.188038 18.7424C0.164066 18.4584 0.158534 16.9962 0.158534 11.9952C0.158534 11.3825 0.158291 10.8265 0.158069 10.321C0.157681 9.43662 0.157361 8.70711 0.158534 8.09975C0.163248 5.28463 0.186142 5.12668 0.264016 4.58944C0.26535 4.58024 0.266701 4.57092 0.268068 4.56147C0.434951 3.40676 0.895952 2.43533 1.6566 1.64573C2.07427 1.21276 2.49747 0.903888 3.03408 0.637429C3.73037 0.290756 4.3695 0.129037 5.39661 0.0436591ZM8.4946 3.20338C9.43874 3.16041 9.74041 3.1499 12.1443 3.1499H12.1417C14.5463 3.1499 14.8468 3.16041 15.791 3.20338C16.7333 3.24653 17.3768 3.39571 17.9411 3.61459C18.5238 3.84048 19.0161 4.1429 19.5085 4.63525C20.0008 5.12723 20.3032 5.62105 20.5301 6.20321C20.7477 6.766 20.897 7.40918 20.9413 8.35147C20.9837 9.2956 20.9947 9.59728 20.9947 12.0011C20.9947 14.405 20.9837 14.7059 20.9413 15.65C20.897 16.592 20.7477 17.2353 20.5301 17.7983C20.3032 18.3803 20.0008 18.8741 19.5085 19.3661C19.0167 19.8584 18.5236 20.1616 17.9416 20.3877C17.3785 20.6065 16.7345 20.7557 15.7923 20.7989C14.8481 20.8418 14.5474 20.8524 12.1433 20.8524C9.73968 20.8524 9.43818 20.8418 8.49405 20.7989C7.55195 20.7557 6.90858 20.6065 6.34542 20.3877C5.76363 20.1616 5.26981 19.8584 4.77801 19.3661C4.28585 18.8741 3.98343 18.3803 3.75717 17.7981C3.53847 17.2353 3.38929 16.5921 3.34596 15.6499C3.30318 14.7057 3.29248 14.405 3.29248 12.0011C3.29248 9.59728 3.30354 9.29542 3.34559 8.35129C3.388 7.40937 3.53736 6.766 3.7568 6.20302C3.98361 5.62105 4.28603 5.12723 4.77838 4.63525C5.27036 4.14308 5.76419 3.84067 6.34634 3.61459C6.90913 3.39571 7.55232 3.24653 8.4946 3.20338ZM11.8493 4.74488C11.6703 4.7448 11.5044 4.74473 11.3502 4.74497V4.74275C9.70058 4.7446 9.38415 4.75566 8.56763 4.79254C7.70463 4.83219 7.23607 4.97602 6.92407 5.09772C6.51101 5.25852 6.21597 5.4503 5.90617 5.76009C5.59638 6.06988 5.40424 6.36492 5.24381 6.77798C5.12266 7.08999 4.97846 7.55837 4.93899 8.42136C4.89658 9.35443 4.8881 9.63324 4.8881 11.9969C4.8881 14.3605 4.89658 14.6408 4.93899 15.5739C4.97827 16.4369 5.12266 16.9053 5.24381 17.2169C5.4046 17.6301 5.59638 17.9244 5.90617 18.2342C6.21597 18.544 6.51101 18.7358 6.92407 18.8962C7.23626 19.0174 7.70463 19.1616 8.56763 19.2014C9.50069 19.2438 9.7808 19.253 12.1443 19.253C14.5075 19.253 14.7878 19.2438 15.7209 19.2014C16.5839 19.162 17.0526 19.0181 17.3643 18.8964C17.7775 18.736 18.0716 18.5442 18.3814 18.2344C18.6912 17.9248 18.8834 17.6307 19.0438 17.2176C19.1649 16.906 19.3091 16.4376 19.3486 15.5746C19.391 14.6416 19.4002 14.3613 19.4002 11.9991C19.4002 9.63693 19.391 9.35664 19.3486 8.42357C19.3093 7.56058 19.1649 7.0922 19.0438 6.78056C18.883 6.36751 18.6912 6.07247 18.3814 5.76267C18.0718 5.45288 17.7773 5.2611 17.3643 5.10068C17.0523 4.97952 16.5839 4.83532 15.7209 4.79586C14.7876 4.75345 14.5075 4.74497 12.1443 4.74497C12.0421 4.74497 11.9439 4.74492 11.8493 4.74488ZM16.2788 6.39367C16.4535 6.27694 16.6589 6.21464 16.869 6.21464V6.21427C17.4554 6.21427 17.9311 6.69002 17.9311 7.27642C17.9312 7.48651 17.869 7.6919 17.7523 7.86661C17.6356 8.04133 17.4698 8.17753 17.2757 8.25798C17.0816 8.33842 16.868 8.35951 16.662 8.31857C16.4559 8.27763 16.2666 8.1765 16.1181 8.02797C15.9695 7.87944 15.8683 7.69018 15.8273 7.48414C15.7862 7.27809 15.8073 7.06451 15.8876 6.8704C15.968 6.6763 16.1042 6.51039 16.2788 6.39367ZM7.59879 12.0011C7.59879 9.49094 9.63391 7.45575 12.1441 7.45565C14.6543 7.45565 16.6892 9.49088 16.6892 12.0011C16.6892 14.5114 14.6545 16.5457 12.1443 16.5457C9.63402 16.5457 7.59879 14.5114 7.59879 12.0011ZM15.0947 12.0011C15.0947 10.3716 13.7736 9.05072 12.1443 9.05072C10.5147 9.05072 9.19385 10.3716 9.19385 12.0011C9.19385 13.6305 10.5147 14.9515 12.1443 14.9515C13.7736 14.9515 15.0947 13.6305 15.0947 12.0011Z"
-                  fill="#333333"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_4527_91515">
-                  <rect width="24" height="24" fill="white" transform="translate(0.145996)"></rect>
-                </clipPath>
-              </defs>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.behance.net/pikazootrud45c" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="50" height="49" fill="#333333"
-              viewBox="0 0 700 700">
-              <g id="圖層_2" data-name="圖層 2">
-                <g id="Layer_1" data-name="Layer 1">
-                  <path d="M487.66,315c-45.16,0-51.41,45-51.41,45h95.94S532.81,315,487.66,315Z" />
-                  <path d="M270,360H185v78.12h80.78c12.19-.31,35-3.74,35-38C300.78,359.53,270,360,270,360Z" />
-                  <path
-                    d="M350,0C156.72,0,0,156.72,0,350S156.72,700,350,700,700,543.28,700,350,543.28,0,350,0Zm73.75,215H544.22v35.94H423.75ZM362.81,403.75C362.81,492.81,270,490,270,490H118.12V197.81H270c46.25,0,82.66,25.47,82.66,77.82s-44.54,55.62-44.54,55.62c58.75,0,54.69,72.5,54.69,72.5Zm225.32-4.84H436.72c0,54.22,51.4,50.78,51.4,50.78,48.6,0,46.88-31.41,46.88-31.41h51.41c0,83.44-100,77.66-100,77.66-119.85,0-112.19-111.72-112.19-111.72S374.06,272,486.41,272c118.28.16,101.71,126.88,101.71,126.88Z" />
-                  <path
-                    d="M290.62,280.16c0-30.32-20.62-30.32-20.62-30.32H185V315h79.69C278.44,315,290.62,310.47,290.62,280.16Z" />
-                </g>
-              </g>
-            </svg>
-          </a>
-        </li>
-      </ul>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>聯絡我</h2>
-    <p>Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/你的帳號" target="_blank">@你的帳號</a></p>
+  <section id="contact">
+    <h2 class="section_title">Contact</h2>
+    <div class="contact_flex">
+      <img class="contact_img" src="img/contact.jpg" alt="">
+      <div class="contact_info">
+        <p>pikazoo.truckski@gmail.com</p>
+        <ul class="sns_icons">
+          <li>
+            <a href="https://www.facebook.com/PikazooChen/" target="_blank">
+              <svg class="icon" width="50" height="49" viewBox="0 0 25 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.146 12.073C24.146 5.40365 18.7424 0 12.073 0C5.40365 0 0 5.40365 0 12.073C0 18.0988 4.41493 23.0935 10.1866 24V15.563H7.11968V12.073H10.1866V9.41306C10.1866 6.38751 11.9878 4.71627 14.7466 4.71627C16.0678 4.71627 17.4494 4.95189 17.4494 4.95189V7.92146H15.9267C14.4273 7.92146 13.9594 8.85225 13.9594 9.8069V12.073H17.3077L16.7723 15.563H13.9594V24C19.7311 23.0935 24.146 18.0988 24.146 12.073Z"
+                  fill="#333333"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/pikazoochen/" target="_blank">
+              <svg class="icon" width="50" height="49" viewBox="0 0 25 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4527_91515)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5.39661 0.0436591C5.68114 0.0200558 7.14491 0.0148926 12.1499 0.0148926H16.0518C18.8638 0.0197783 19.0238 0.0429532 19.558 0.120312L19.589 0.124795C20.745 0.291493 21.7149 0.752495 22.5079 1.51001C22.9523 1.93764 23.2584 2.35586 23.5341 2.91588C23.87 3.60001 24.0351 4.24725 24.1107 5.20982C24.1269 5.41635 24.1343 8.70311 24.1343 11.9921C24.1343 15.2805 24.1275 18.5733 24.1112 18.7799C24.0366 19.7271 23.8715 20.3799 23.546 21.0511C23.2283 21.709 22.7708 22.2896 22.2055 22.7524C21.6402 23.2152 20.9806 23.549 20.2729 23.7305C19.752 23.8651 19.2809 23.9283 18.4695 23.9665C18.18 23.9812 15.1521 23.9849 12.1243 23.9849C9.09642 23.9849 6.07041 23.9757 5.77353 23.9628C5.07281 23.9296 4.52698 23.8595 4.03279 23.7323C2.60553 23.3635 1.39402 22.3751 0.75968 21.0585C0.427759 20.3707 0.271019 19.7419 0.188038 18.7424C0.164066 18.4584 0.158534 16.9962 0.158534 11.9952C0.158534 11.3825 0.158291 10.8265 0.158069 10.321C0.157681 9.43662 0.157361 8.70711 0.158534 8.09975C0.163248 5.28463 0.186142 5.12668 0.264016 4.58944C0.26535 4.58024 0.266701 4.57092 0.268068 4.56147C0.434951 3.40676 0.895952 2.43533 1.6566 1.64573C2.07427 1.21276 2.49747 0.903888 3.03408 0.637429C3.73037 0.290756 4.3695 0.129037 5.39661 0.0436591ZM8.4946 3.20338C9.43874 3.16041 9.74041 3.1499 12.1443 3.1499H12.1417C14.5463 3.1499 14.8468 3.16041 15.791 3.20338C16.7333 3.24653 17.3768 3.39571 17.9411 3.61459C18.5238 3.84048 19.0161 4.1429 19.5085 4.63525C20.0008 5.12723 20.3032 5.62105 20.5301 6.20321C20.7477 6.766 20.897 7.40918 20.9413 8.35147C20.9837 9.2956 20.9947 9.59728 20.9947 12.0011C20.9947 14.405 20.9837 14.7059 20.9413 15.65C20.897 16.592 20.7477 17.2353 20.5301 17.7983C20.3032 18.3803 20.0008 18.8741 19.5085 19.3661C19.0167 19.8584 18.5236 20.1616 17.9416 20.3877C17.3785 20.6065 16.7345 20.7557 15.7923 20.7989C14.8481 20.8418 14.5474 20.8524 12.1433 20.8524C9.73968 20.8524 9.43818 20.8418 8.49405 20.7989C7.55195 20.7557 6.90858 20.6065 6.34542 20.3877C5.76363 20.1616 5.26981 19.8584 4.77801 19.3661C4.28585 18.8741 3.98343 18.3803 3.75717 17.7981C3.53847 17.2353 3.38929 16.5921 3.34596 15.6499C3.30318 14.7057 3.29248 14.405 3.29248 12.0011C3.29248 9.59728 3.30354 9.29542 3.34559 8.35129C3.388 7.40937 3.53736 6.766 3.7568 6.20302C3.98361 5.62105 4.28603 5.12723 4.77838 4.63525C5.27036 4.14308 5.76419 3.84067 6.34634 3.61459C6.90913 3.39571 7.55232 3.24653 8.4946 3.20338ZM11.8493 4.74488C11.6703 4.7448 11.5044 4.74473 11.3502 4.74497V4.74275C9.70058 4.7446 9.38415 4.75566 8.56763 4.79254C7.70463 4.83219 7.23607 4.97602 6.92407 5.09772C6.51101 5.25852 6.21597 5.4503 5.90617 5.76009C5.59638 6.06988 5.40424 6.36492 5.24381 6.77798C5.12266 7.08999 4.97846 7.55837 4.93899 8.42136C4.89658 9.35443 4.8881 9.63324 4.8881 11.9969C4.8881 14.3605 4.89658 14.6408 4.93899 15.5739C4.97827 16.4369 5.12266 16.9053 5.24381 17.2169C5.4046 17.6301 5.59638 17.9244 5.90617 18.2342C6.21597 18.544 6.51101 18.7358 6.92407 18.8962C7.23626 19.0174 7.70463 19.1616 8.56763 19.2014C9.50069 19.2438 9.7808 19.253 12.1443 19.253C14.5075 19.253 14.7878 19.2438 15.7209 19.2014C16.5839 19.162 17.0526 19.0181 17.3643 18.8964C17.7775 18.736 18.0716 18.5442 18.3814 18.2344C18.6912 17.9248 18.8834 17.6307 19.0438 17.2176C19.1649 16.906 19.3091 16.4376 19.3486 15.5746C19.391 14.6416 19.4002 14.3613 19.4002 11.9991C19.4002 9.63693 19.391 9.35664 19.3486 8.42357C19.3093 7.56058 19.1649 7.0922 19.0438 6.78056C18.883 6.36751 18.6912 6.07247 18.3814 5.76267C18.0718 5.45288 17.7773 5.2611 17.3643 5.10068C17.0523 4.97952 16.5839 4.83532 15.7209 4.79586C14.7876 4.75345 14.5075 4.74497 12.1443 4.74497C12.0421 4.74497 11.9439 4.74492 11.8493 4.74488ZM16.2788 6.39367C16.4535 6.27694 16.6589 6.21464 16.869 6.21464V6.21427C17.4554 6.21427 17.9311 6.69002 17.9311 7.27642C17.9312 7.48651 17.869 7.6919 17.7523 7.86661C17.6356 8.04133 17.4698 8.17753 17.2757 8.25798C17.0816 8.33842 16.868 8.35951 16.662 8.31857C16.4559 8.27763 16.2666 8.1765 16.1181 8.02797C15.9695 7.87944 15.8683 7.69018 15.8273 7.48414C15.7862 7.27809 15.8073 7.06451 15.8876 6.8704C15.968 6.6763 16.1042 6.51039 16.2788 6.39367ZM7.59879 12.0011C7.59879 9.49094 9.63391 7.45575 12.1441 7.45565C14.6543 7.45565 16.6892 9.49088 16.6892 12.0011C16.6892 14.5114 14.6545 16.5457 12.1443 16.5457C9.63402 16.5457 7.59879 14.5114 7.59879 12.0011ZM15.0947 12.0011C15.0947 10.3716 13.7736 9.05072 12.1443 9.05072C10.5147 9.05072 9.19385 10.3716 9.19385 12.0011C9.19385 13.6305 10.5147 14.9515 12.1443 14.9515C13.7736 14.9515 15.0947 13.6305 15.0947 12.0011Z"
+                    fill="#333333"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_4527_91515">
+                    <rect width="24" height="24" fill="white" transform="translate(0.145996)"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.behance.net/pikazootrud45c" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="50" height="49" fill="#333333"
+                viewBox="0 0 700 700">
+                <g id="圖層_2" data-name="圖層 2">
+                  <g id="Layer_1" data-name="Layer 1">
+                    <path d="M487.66,315c-45.16,0-51.41,45-51.41,45h95.94S532.81,315,487.66,315Z" />
+                    <path d="M270,360H185v78.12h80.78c12.19-.31,35-3.74,35-38C300.78,359.53,270,360,270,360Z" />
+                    <path
+                      d="M350,0C156.72,0,0,156.72,0,350S156.72,700,350,700,700,543.28,700,350,543.28,0,350,0Zm73.75,215H544.22v35.94H423.75ZM362.81,403.75C362.81,492.81,270,490,270,490H118.12V197.81H270c46.25,0,82.66,25.47,82.66,77.82s-44.54,55.62-44.54,55.62c58.75,0,54.69,72.5,54.69,72.5Zm225.32-4.84H436.72c0,54.22,51.4,50.78,51.4,50.78,48.6,0,46.88-31.41,46.88-31.41h51.41c0,83.44-100,77.66-100,77.66-119.85,0-112.19-111.72-112.19-111.72S374.06,272,486.41,272c118.28.16,101.71,126.88,101.71,126.88Z" />
+                    <path
+                      d="M290.62,280.16c0-30.32-20.62-30.32-20.62-30.32H185V315h79.69C278.44,315,290.62,310.47,290.62,280.16Z" />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
+  <footer id="site-footer">
     <p>© 2025 Pikazoo Chen. All rights reserved.</p>
   </footer>
 

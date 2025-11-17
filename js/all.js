@@ -13,33 +13,63 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  $('.nav_home,a[href="#"]').click(function (e) {
+  $('#nav_home,#logo').click(function (e) {
     e.preventDefault();
     navLinks.classList.remove("show");
     $('html , body').animate({
-      scrollTop: $('body').offset().top,
+      scrollTop: $('html').offset().top,
     }, 900);
   });
 
-  $('.nav_about,a[href="#about"]').click(function (e) {
+  $('#nav_about').click(function (e) {
     e.preventDefault();
     navLinks.classList.remove("show");
     $('#about').show();
     $('html , body').animate({
-      scrollTop: $('#about').offset().top - 104,
+      scrollTop: $('#about').offset().top - 134,
     }, 900);
   });
 
-  $('.nav_blog').click(function (e) {
+  $('#nav_portfolio').click(function (e) {
+    e.preventDefault();
+    navLinks.classList.remove("show");
+    // portfolio.scrollIntoView({ behavior: "smooth", block: "start"});
+    $('html , body').animate({
+      scrollTop: $('#portfolio').offset().top - 84,
+    }, 900);
+  });
+
+  $('#nav_contact').click(function (e) {
+    e.preventDefault();
+    navLinks.classList.remove("show");
+    $('html , body').animate({
+      scrollTop: $('#contact').offset().top - 134,
+    }, 900);
+  });
+
+  $('#nav_blog').click(function (e) {
     e.preventDefault();
     navLinks.classList.remove("show");
     window.open("https://pikazoochen.blogspot.com/");
   });
 
-  $('.nav_shop').click(function (e) {
+  $('#nav_shop').click(function (e) {
     e.preventDefault();
     navLinks.classList.remove("show");
     window.open("https://8uifr1-d4.myshopify.com/");
+  });
+
+  $("#nav_language").click(function (e) {
+    e.preventDefault();
+    let currentText = $(this).text();
+    // 判斷目前的文字，並切換成另一個
+    if (currentText === "EN") {
+      // 如果目前是 EN，則切換成 TW
+      $(this).text("TW");
+    } else if (currentText === "TW") {
+      // 如果目前是 TW，則切換成 EN
+      $(this).text("EN");
+    }
   });
 
   //Carousel
