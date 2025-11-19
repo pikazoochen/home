@@ -19,13 +19,15 @@
       <!-- 共用選單 -->
       <nav id="nav-links">
         <ul>
-          <li id="nav_home"><a href="#">HOME</a></li>
-          <li id="nav_about"><a href="#about">ABOUT</a></li>
-          <li id="nav_contact"><a href="#contact">CONTACT</a></li>
-          <li id="nav_portfolio"><a href="#portfolio">PORTFOLIO</a></li>
-          <li id="nav_blog"><a href="https://pikazoochen.blogspot.com/" target="_blank">BLOG</a></li>
-          <li id="nav_shop"><a href="https://8uifr1-d4.myshopify.com/" target="_blank">SHOP</a></li>
-          <li id="nav_language">EN</li>
+          <li id="nav_home"><a href="#" data-i18n="nav.home">HOME</a></li>
+          <li id="nav_about"><a data-i18n="nav.about" href="#about">ABOUT</a></li>
+          <li id="nav_contact"><a data-i18n="nav.contact" href="#contact">CONTACT</a></li>
+          <li id="nav_portfolio"><a data-i18n="nav.portfolio" href="#portfolio">PORTFOLIO</a></li>
+          <li id="nav_blog"><a data-i18n="nav.blog" href="https://pikazoochen.blogspot.com/" target="_blank">BLOG</a>
+          </li>
+          <li id="nav_shop"><a data-i18n="nav.shop" href="https://8uifr1-d4.myshopify.com/" target="_blank">SHOP</a>
+          </li>
+          <li id="nav_language" data-i18n="nav.language">EN</li>
         </ul>
       </nav>
     </header>
@@ -35,27 +37,27 @@
   <div class="carousel">
     <!-- Slide 1 -->
     <div class="carousel-slide active" style="background-image: url(img/carousel/pipi_01.jpg);">
-      <div class="carousel-caption">
+      <!-- <div class="carousel-caption">
         <h2>作品一標題</h2>
         <p>這是簡介文字</p>
-      </div>
+      </div> -->
     </div>
 
     <!-- Slide 2 -->
     <div class="carousel-slide" style="background-image: url(img/carousel/pipi_02.jpg);">
-      <div class="carousel-caption">
+      <!-- <div class="carousel-caption">
         <h2>作品二標題</h2>
         <p>這是簡介文字</p>
-      </div>
+      </div> -->
     </div>
 
     <!-- Slide 3 -->
     <div class="carousel-slide"
       style="background-image: url(img/carousel/pipi_03.jpg);background-position: center right;">
-      <div class="carousel-caption">
+      <!-- <div class="carousel-caption">
         <h2>作品三標題</h2>
         <p>這是簡介文字</p>
-      </div>
+      </div> -->
     </div>
 
     <!-- 控制按鈕 -->
@@ -74,14 +76,14 @@
 
   <!-- Portfolio -->
   <section id="portfolio">
-    <h2 class="section_title">PORTFOLIO</h2>
+    <h2 class="section_title" data-i18n="nav.portfolio">PORTFOLIO</h2>
     <ul class="gallery">
       <li class="plus">
         <div class="work1">
           <img src="img/portfolio/portfolio_01.png">
           <div class="workhover">
             <div id="worktext">
-              <h3>家家酒</h3>
+              <h3 data-i18n="portfolio.work1">家家酒</h3>
               <p>SELECTED ILLUSTRATORS 2020</p>
               <a href="https://www.behance.net/gallery/93103397/Make-Believe" target="_blank" class="open-post">View
                 project</a>
@@ -95,7 +97,7 @@
           <img src="img/portfolio/portfolio_02.png">
           <div class="workhover">
             <div id="worktext">
-              <h3>皮皮的飛船</h3>
+              <h3 data-i18n="portfolio.work2">皮皮的飛船</h3>
               <p>personal</p>
               <a href="https://www.behance.net/gallery/71158045/-Pippis-Airship" target="_blank" class="open-post">View
                 project</a>
@@ -109,7 +111,7 @@
           <img src="img/portfolio/portfolio_03.png">
           <div class="workhover">
             <div id="worktext">
-              <h3>石虎樂園</h3>
+              <h3 data-i18n="portfolio.work3">石虎樂園</h3>
               <p>personal</p>
               <a href="https://www.behance.net/gallery/80346711/-Happy-Taiwan-Leopard-Cat" target="_blank"
                 class="open-post">View project</a>
@@ -123,7 +125,7 @@
           <img src="img/portfolio/portfolio_04.png">
           <div class="workhover">
             <div id="worktext">
-              <h3>紅鳩寶寶</h3>
+              <h3 data-i18n="portfolio.work4">紅鳩寶寶</h3>
               <p>personal</p>
               <a href="#portfolio" class="open-post">View project</a>
             </div>
@@ -136,7 +138,7 @@
           <img src="img/portfolio/portfolio_05.png">
           <div class="workhover">
             <div id="worktext">
-              <h3>升學主義</h3>
+              <h3 data-i18n="portfolio.work5">升學主義</h3>
               <p>personal</p>
               <a href="#portfolio" class="open-post">View project</a>
             </div>
@@ -149,7 +151,7 @@
           <img src="img/portfolio/portfolio_06.png">
           <div class="workhover">
             <div id="worktext">
-              <h3>愚人船</h3>
+              <h3 data-i18n="portfolio.work6">愚人船</h3>
               <p>Personal</p>
               <a href="https://www.behance.net/gallery/55709927/Ship-of-Fools" target="_blank" class="open-post">View
                 project</a>
@@ -204,13 +206,13 @@
 
   <!-- About -->
   <section id="about" style="display: none;">
-    <h2 class="section_title">About</h2>
+    <h2 class="section_title" data-i18n="nav.about">About</h2>
 
     <div class="about_flex">
       <div class="about_img">
         <img src="img/who_am_i.jpeg" alt="">
       </div>
-      <div class="about_text_top">
+      <div class="about_text_top" data-i18n="about.text_top">
         <p>
           <strong>關於 Pikazoo Chen</strong><br>
           台灣出生，目前生活創作於台北。<br><br>
@@ -218,11 +220,11 @@
           <strong>教育 (Education)</strong><br>
           東京藝術⼤學壁畫研究室，研究生 ( Non-Degree Research Student )，2015 - 2016<br>
           國立台灣師範⼤學，美術學⼠ ( BFA )
+        </p>
       </div>
-
     </div>
 
-    <div class="about_text_bottom">
+    <div class="about_text_bottom" data-i18n="about.text_bottom">
       <p>
         <strong>個展 (Solo Exhibitions)</strong><br>
         台北，台灣，台北的天空有⼀片海 無所屬創作個展， 2011<br>
@@ -242,17 +244,17 @@
         </a>
         ISBN：978-8833645599，義大利波隆那：Edizioni Pendragon，2023。頁碼： 75；備註：作品被選用為書籍封面圖像。<br><br>
       </p>
-
     </div>
   </section>
 
   <!-- Contact -->
   <section id="contact">
-    <h2 class="section_title">Contact</h2>
+    <h2 class="section_title" data-i18n="nav.contact">Contact</h2>
     <div class="contact_flex">
       <img class="contact_img" src="img/contact.jpg" alt="">
       <div class="contact_info">
-        <p>pikazoo.truckski@gmail.com</p>
+        <p data-i18n="contact.text">歡迎所有關於<strong>插畫委託</strong>、<strong>商業合作</strong>、<strong>展覽邀約</strong>，以及<strong>版權使用</strong>的需求與洽談。<br>
+          任何合作諮詢，請直接透過以下電子郵件聯繫 Pikazoo Chen：pikazoo.truckski@gmail.com</p>
         <ul class="sns_icons">
           <li>
             <a href="https://www.facebook.com/PikazooChen/" target="_blank">
@@ -300,7 +302,7 @@
           </li>
         </ul>
       </div>
-      
+
     </div>
   </section>
 
@@ -310,6 +312,7 @@
   </footer>
 
   <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/lang.js"></script>
   <script src="js/all.js"></script>
 </body>
 

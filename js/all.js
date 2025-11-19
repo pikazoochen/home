@@ -59,19 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.open("https://8uifr1-d4.myshopify.com/");
   });
 
-  $("#nav_language").click(function (e) {
-    e.preventDefault();
-    let currentText = $(this).text();
-    // 判斷目前的文字，並切換成另一個
-    if (currentText === "EN") {
-      // 如果目前是 EN，則切換成 TW
-      $(this).text("TW");
-    } else if (currentText === "TW") {
-      // 如果目前是 TW，則切換成 EN
-      $(this).text("EN");
-    }
-  });
-
   //Carousel
   const slides = document.querySelectorAll(".carousel-slide");
   const prevBtn = document.querySelector(".prev");

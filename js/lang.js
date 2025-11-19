@@ -1,0 +1,126 @@
+// 核心：所有翻譯內容都集中在這裡
+const translations = {
+  'en': {
+    "nav.language": "TW",
+    "nav.home": "HOME",
+    "nav.about": "ABOUT",
+    "nav.contact": "CONTACT",
+    "nav.portfolio": "PORTFOLIO",
+    "nav.blog": "BLOG",
+    "nav.shop": "SHOP",
+    "portfolio.work1":"Make believe",
+    "portfolio.work2":"Pippi's Airship",
+    "portfolio.work3":"Happy Taiwan Leopard Cat",
+    "portfolio.work4":"Baby Red Dove",
+    "portfolio.work5":"The Examination System",
+    "portfolio.work6":"Ship of Fools",
+    "about.text_top": `<p>
+          <strong>About Pikazoo Chen</strong><br>
+          Born in Taiwan, currently living and working in Taipei.<br><br>
+
+          <strong>Education</strong><br>
+          Tokyo University of the Arts, Mural Painting Lab, Research Student ( Non-Degree Research Student ), 2015 - 2016<br>
+          National Taiwan Normal University, Bachelor of Fine Arts (BFA)
+        </p>`,
+    "about.text_bottom": `<p>
+        <strong>Solo Exhibitions</strong><br>
+        Taipei, Taiwan, A Sea in the Sky of Taipei – Independent Solo Exhibition, 2011<br>
+        Taipei, Taiwan, GOD-D: Chen Kuan Yu Solo Exhibition – NTNU Library, 2009<br><br>
+
+        <strong>Group Exhibitions</strong><br>
+        Bologna, Italy, EU MAPPING Project "Children Spectators" Final Exhibition (Bologna Children's Book Fair), 2023<br>
+        Tokyo, Japan, Tokyo Geidai Research Student Joint Exhibition, 2016<br><br>
+
+        <strong>Awards and Honors</strong><br>
+        Bologna Children's Book Fair, Italy, Selected Illustrator, EU MAPPING Project "Children Spectators" International Illustration Contest, 2020<br><br>
+
+        <strong>Publications</strong><br>
+        Artwork: "Make Believe." In: Roberto Frabetti (Ed.), <a href="https://www.pendragon.it/catalogo/produzione-varia/varia/il-bambino-spettatore-children-spectator-detail.html"
+          target="_blank" style="color:#74957A;">Children Spectators: Il Bambino Spettatore </a>(ISBN: 978-8833645599). Bologna, Italy: Edizioni Pendragon, 2023. Page: 75; Note: Artwork selected for the book cover image.<br><br>
+      </p>`,
+      "contact.text":`<strong>Inquiries</strong><br>
+All requests regarding <strong>illustration commissions</strong>, <strong>commercial collaborations</strong>, <strong>exhibition opportunities</strong>, and <strong>licensing</strong> are welcome.<br>
+Please direct all project inquiries to Pikazoo Chen via email at: pikazoo.truckski@gmail.com`
+  },
+  'tw': {
+    "nav.language": "EN",
+    "nav.home": "首頁",
+    "nav.about": "關於",
+    "nav.contact": "聯繫",
+    "nav.portfolio": "作品集",
+    "nav.blog": "部落格",
+    "nav.shop": "商店",
+    "portfolio.work1":"家家酒",
+    "portfolio.work2":"皮皮的飛船",
+    "portfolio.work3":"石虎樂園",
+    "portfolio.work4":"紅鳩寶寶",
+    "portfolio.work5":"升學主義",
+    "portfolio.work6":"愚人船",
+    "about.text_top": `<p>
+          <strong>關於 Pikazoo Chen</strong><br>
+          台灣出生，目前生活創作於台北。<br><br>
+
+          <strong>教育 (Education)</strong><br>
+          東京藝術⼤學壁畫研究室，研究生 ( Non-Degree Research Student )，2015 - 2016<br>
+          國立台灣師範⼤學，美術學⼠ ( BFA )
+        </p>`,
+    "about.text_bottom": `<p>
+        <strong>個展 (Solo Exhibitions)</strong><br>
+        台北，台灣，台北的天空有⼀片海 無所屬創作個展， 2011<br>
+        台北，台灣，果-D 陳冠瑜個⼈作品展 師⼤圖書館， 2009<br><br>
+
+        <strong>聯展 (Group Exhibitions)</strong><br>
+        波隆那，義⼤利，波隆那書展 歐盟《繪製早期表演藝術美學地圖》計畫「兒童觀眾」2023 Mapping 聯展，2023<br>
+        東京，日本，東京藝⼤ 研究⽣聯展，2016<br><br>
+
+        <strong>獲獎與榮譽 (Awards and Honors)</strong><br>
+        波隆那，義⼤利，波隆那書展 歐盟《繪製早期表演藝術美學地圖》計畫「兒童觀眾」國際插畫比賽 入選，2020<br><br>
+
+        <strong>出版紀錄 (Publications)</strong><br>
+        作品：《Make Believe》。載於： Roberto Frabetti 主編，
+        <a href="https://www.pendragon.it/catalogo/produzione-varia/varia/il-bambino-spettatore-children-spectator-detail.html"
+          target="_blank" style="color:#74957A;">《Children Spectators: Il Bambino Spettatore》
+        </a>
+        ISBN：978-8833645599，義大利波隆那：Edizioni Pendragon，2023。頁碼： 75；備註：作品被選用為書籍封面圖像。<br><br>
+      </p>`,
+      "contact.text":`歡迎所有關於<strong>插畫委託</strong>、<strong>商業合作</strong>、<strong>展覽邀約</strong>，以及<strong>版權使用</strong>的需求與洽談。<br>
+          任何合作諮詢，請直接透過以下電子郵件聯繫 Pikazoo Chen：pikazoo.truckski@gmail.com`
+  }
+};
+
+// 核心切換函數
+function switchLanguage(langCode) {
+  const currentLangPack = translations[langCode];
+
+  // 1. 遍歷所有帶有 data-i18n 屬性的元素
+  $('[data-i18n]').each(function () {
+    const key = $(this).data('i18n');
+    const translatedText = currentLangPack[key];
+
+    // 2. 替換文字內容
+    if (translatedText) {
+      $(this).html(translatedText);
+    }
+  });
+
+  // 3. 更新按鈕的狀態標記 (非常重要！)
+  $('#nav_language').data('lang', langCode);
+}
+
+// 點擊事件處理
+$("#nav_language").click(function (e) {
+  e.preventDefault();
+
+  // 取得當前語言代碼，並判斷下一個要切換的語言
+  const currentLang = $(this).data('lang');
+  const newLang = (currentLang === 'en') ? 'tw' : 'en';
+
+  // 執行切換
+  switchLanguage(newLang);
+});
+
+// 網頁載入完成時，確保先顯示預設語言 (假設 'en')
+$(document).ready(function () {
+  // 這一行確保即使沒點擊，所有文字也是正確的預設語言
+  switchLanguage('en');
+});

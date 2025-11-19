@@ -193,13 +193,14 @@ a {
   transform: translateY(-50%);
   background: none;
   /* 透明背景 */
-  color: #fff;
+  color: #ffffff;
   border: none;
   font-size: 3rem;
   padding: 0.2em 0.4em;
   cursor: pointer;
   z-index: 2;
   transition: transform 0.2s ease;
+  opacity: 0.3;
 }
 
 .carousel button:hover {
@@ -484,7 +485,7 @@ li>a .gallery .gallery:hover {
   display: flex;
   gap: 1em;
   list-style: none;
-  margin: 0;
+  margin: 2% 0 0 0;
   padding: 0;
 }
 
@@ -553,6 +554,7 @@ li>a .gallery .gallery:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 4%;
   }
 
 }
