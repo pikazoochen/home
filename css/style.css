@@ -175,6 +175,8 @@ a {
   color: #fff;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
   max-width: 600px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .carousel-caption h2 {
@@ -200,7 +202,7 @@ a {
   cursor: pointer;
   z-index: 2;
   transition: transform 0.2s ease;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .carousel button:hover {
@@ -485,7 +487,7 @@ li>a .gallery .gallery:hover {
   display: flex;
   gap: 1em;
   list-style: none;
-  margin: 2% 0 0 0;
+  margin: 0;
   padding: 0;
 }
 
