@@ -10,7 +10,7 @@ const translations = {
     "nav.shop": "SHOP",
     "carousel.text01":"HELLO & WELCOME",
     "carousel.text02":"ILLUSTRATION & COMMISSIONS",
-    "carousel.text03":"FINE ART & EXHIBITIONS",
+    "carousel.text03":"FINE ARTS & EXHIBITIONS",
     "portfolio.work1":"Make believe",
     "portfolio.work2":"Pippi's Airship",
     "portfolio.work3":"Happy Taiwan Leopard Cat",
