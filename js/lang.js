@@ -18,7 +18,7 @@ const translations = {
     "portfolio.work5":"The Examination System",
     "portfolio.work6":"Ship of Fools",
     "about.text_top": `<p>
-          <strong>About Pikazoo Chen</strong><br>
+          <strong>About Pikazoo Chen（陳冠瑜）</strong><br>
           Born in Taiwan, currently living and working in Taipei.<br><br>
 
           <strong>Education</strong><br>
@@ -63,7 +63,7 @@ Please direct all project inquiries to Pikazoo Chen via email at: pikazoo.trucks
     "portfolio.work5":"升學主義",
     "portfolio.work6":"愚人船",
     "about.text_top": `<p>
-          <strong>關於 Pikazoo Chen</strong><br>
+          <strong>關於 Pikazoo Chen（陳冠瑜）</strong><br>
           台灣出生，目前生活創作於台北。<br><br>
 
           <strong>教育 (Education)</strong><br>
