@@ -132,7 +132,7 @@ $('#nav_contact').click(function (e) {
   $('#nav_blog').click(function (e) {
     e.preventDefault();
     navLinks.classList.remove("show");
-    window.open("https://blog.pikazoochen.com");
+    window.open("https://pikazoochen.com/blog");
   });
 
   $('#nav_shop').click(function (e) {

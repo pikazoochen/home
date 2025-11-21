@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>一般 on Pikazoo Chen Blog</title>
+    <link>https://pikazoochen.com/blog/categories/%E4%B8%80%E8%88%AC/</link>
+    <description>Recent content in 一般 on Pikazoo Chen Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>© 2025 Pikazoo Chen. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 21 Nov 2025 15:42:00 +0800</lastBuildDate><atom:link href="https://pikazoochen.com/blog/categories/%E4%B8%80%E8%88%AC/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>歡迎來到我的部落格</title>
+      <link>https://pikazoochen.com/blog/posts/welcome/</link>
+      <pubDate>Fri, 21 Nov 2025 15:42:00 +0800</pubDate>
+      
+      <guid>https://pikazoochen.com/blog/posts/welcome/</guid>
+      <description>&lt;figure&gt;&lt;img
+    class=&#34;my-0 rounded-md&#34;
+    loading=&#34;lazy&#34;
+    decoding=&#34;async&#34;
+    fetchpriority=&#34;auto&#34;
+    alt=&#34;圖片&#34;
+    width=&#34;2145&#34;
+    height=&#34;1600&#34;
+    src=&#34;https://pikazoochen.com/blog/posts/welcome/featured_hu_17f2495ba71deaf8.png&#34;
+    srcset=&#34;https://pikazoochen.com/blog/posts/welcome/featured_hu_17f2495ba71deaf8.png 800w, https://pikazoochen.com/blog/posts/welcome/featured_hu_37cbbd762ecd4ab5.png 1280w&#34;
+    sizes=&#34;(min-width: 768px) 50vw, 65vw&#34;
+    data-zoom-src=&#34;https://pikazoochen.com/blog/posts/welcome/featured.png&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;這是我的第一篇文章。在這裡我會分享：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;創作心得&lt;/li&gt;
+&lt;li&gt;生活感想&lt;/li&gt;
+&lt;li&gt;學習筆記&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;感謝你的造訪！&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pikazoochen.com/blog/posts/welcome/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
