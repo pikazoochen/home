@@ -132,13 +132,13 @@ $('#nav_contact').click(function (e) {
   $('#nav_blog').click(function (e) {
     e.preventDefault();
     navLinks.classList.remove("show");
-    window.open("https://pikazoochen.blogspot.com/");
+    window.open("https://blog.pikazoochen.com");
   });
 
   $('#nav_shop').click(function (e) {
     e.preventDefault();
     navLinks.classList.remove("show");
-    window.open("https://8uifr1-d4.myshopify.com/");
+    window.open("https://shop.pikazoochen.com");
   });
   
 });
