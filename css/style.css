@@ -246,9 +246,9 @@ a {
 
 /* 手機版 RWD */
 @media (max-width: 768px) {
-  /* .carousel {
-    height: 70vh;
-  } */
+  .carousel {
+    height: 95vh;
+  }
 
   .carousel-caption {
     bottom: 12%;
