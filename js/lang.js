@@ -11,7 +11,7 @@ const translations = {
     "carousel.text01":"HELLO & WELCOME",
     "carousel.text02":"ILLUSTRATION & COMMISSIONS",
     "carousel.text03":"FINE ARTS & EXHIBITIONS",
-    "portfolio.work1":"Make believe",
+    "portfolio.work1":"Make Believe",
     "portfolio.work2":"Pippi's Airship",
     "portfolio.work3":"Happy Taiwan Leopard Cat",
     "portfolio.work4":"Baby Red Dove",
