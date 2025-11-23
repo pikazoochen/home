@@ -142,6 +142,7 @@ a {
   #nav-links a:hover {
     border-bottom: none;
     background-color: transparent;
+    color: #292929;
   }
 
   /* 展開狀態 */
