@@ -138,7 +138,7 @@ $('#nav_contact').click(function (e) {
   $('#nav_shop').click(function (e) {
     e.preventDefault();
     navLinks.classList.remove("show");
-    window.open("https://shop.pikazoochen.com?utm_source=home&utm_medium=referral&utm_campaign=header_nav");
+    window.open("https://shop.pikazoochen.com?utm_source=home&utm_medium=referral&utm_campaign=home_nav");
   });
   
 });
