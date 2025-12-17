@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Pikazoo Chen Blog</title><link>https://pikazoochen.com/blog/categories/</link><description>Recent content in Categories on Pikazoo Chen Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>© 2025 Pikazoo Chen. All rights reserved.</copyright><lastBuildDate>Wed, 17 Dec 2025 17:38:00 +0800</lastBuildDate><atom:link href="https://pikazoochen.com/blog/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>商品</title><link>https://pikazoochen.com/blog/categories/%E5%95%86%E5%93%81/</link><pubDate>Wed, 17 Dec 2025 17:38:00 +0800</pubDate><guid>https://pikazoochen.com/blog/categories/%E5%95%86%E5%93%81/</guid><description/></item><item><title>一般</title><link>https://pikazoochen.com/blog/categories/%E4%B8%80%E8%88%AC/</link><pubDate>Fri, 21 Nov 2025 15:42:00 +0800</pubDate><guid>https://pikazoochen.com/blog/categories/%E4%B8%80%E8%88%AC/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Pikazoo Chen Blog</title>
+    <link>https://pikazoochen.com/blog/categories/</link>
+    <description>Recent content in Categories on Pikazoo Chen Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>© 2025 Pikazoo Chen. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 17 Dec 2025 17:38:00 +0800</lastBuildDate><atom:link href="https://pikazoochen.com/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>商品</title>
+      <link>https://pikazoochen.com/blog/categories/%E5%95%86%E5%93%81/</link>
+      <pubDate>Wed, 17 Dec 2025 17:38:00 +0800</pubDate>
+      
+      <guid>https://pikazoochen.com/blog/categories/%E5%95%86%E5%93%81/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>一般</title>
+      <link>https://pikazoochen.com/blog/categories/%E4%B8%80%E8%88%AC/</link>
+      <pubDate>Fri, 21 Nov 2025 15:42:00 +0800</pubDate>
+      
+      <guid>https://pikazoochen.com/blog/categories/%E4%B8%80%E8%88%AC/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
