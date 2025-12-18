@@ -8,15 +8,15 @@ const translations = {
     "nav.portfolio": "PORTFOLIO",
     "nav.blog": "BLOG",
     "nav.shop": "SHOP",
-    "carousel.text01":"HELLO & WELCOME",
-    "carousel.text02":"ILLUSTRATION & COMMISSIONS",
-    "carousel.text03":"FINE ARTS & EXHIBITIONS",
-    "portfolio.work1":"Make Believe",
-    "portfolio.work2":"Pippi's Airship",
-    "portfolio.work3":"Happy Taiwan Leopard Cat",
-    "portfolio.work4":"Baby Red Dove",
-    "portfolio.work5":"The Examination System",
-    "portfolio.work6":"Ship of Fools",
+    "carousel.text01": "HELLO & WELCOME",
+    "carousel.text02": "ILLUSTRATION & COMMISSIONS",
+    "carousel.text03": "FINE ARTS & EXHIBITIONS",
+    "portfolio.work1": "Make Believe",
+    "portfolio.work2": "Pippi's Airship",
+    "portfolio.work3": "Happy Taiwan Leopard Cat",
+    "portfolio.work4": "Baby Red Dove",
+    "portfolio.work5": "The Examination System",
+    "portfolio.work6": "Ship of Fools",
     "about.text_top": `<p>
           <strong>About Pikazoo Chen（陳冠瑜）</strong><br>
           Born in Taiwan, currently living and working in Taipei.<br><br>
@@ -41,9 +41,13 @@ const translations = {
         Artwork: "Make Believe." In: Roberto Frabetti (Ed.), <a href="https://www.pendragon.it/catalogo/produzione-varia/varia/il-bambino-spettatore-children-spectator-detail.html"
           target="_blank" style="color:#74957A;">Children Spectators: Il Bambino Spettatore </a>(ISBN: 978-8833645599). Bologna, Italy: Edizioni Pendragon, 2023. Page: 75; Note: Artwork selected for the book cover image.<br><br>
       </p>`,
-      "contact.text":`<strong>Inquiries</strong><br>
+    "contact.text": `<strong>Inquiries</strong><br>
 All requests regarding <strong>illustration commissions</strong>, <strong>commercial collaborations</strong>, <strong>exhibition opportunities</strong>, and <strong>licensing</strong> are welcome.<br>
-Please direct all project inquiries to Pikazoo Chen via email at: pikazoo.truckski@gmail.com`
+Please direct all project inquiries to Pikazoo Chen via email at: <a href="mailto:pikazoo.truckski@gmail.com">pikazoo.truckski@gmail.com</a>`,
+    "contact.shop_info": `
+    I also operate <a href='https://shop.pikazoochen.com?utm_source=home&utm_medium=referral&utm_campaign=home_shop_info' target='_blank'><strong>Pikazoo Chen Shop</strong></a>, an online store offering art prints and lifestyle products featuring my artwork.<br>
+    The shop uses <strong>print-on-demand production</strong>, creating items only after orders are placed to reduce waste and ensure quality.<br>
+    For shop inquiries and customer service: <a href='mailto:service@pikazoochen.com'>service@pikazoochen.com</a>`
   },
   'tw': {
     "nav.language": "EN",
@@ -53,15 +57,15 @@ Please direct all project inquiries to Pikazoo Chen via email at: pikazoo.trucks
     "nav.portfolio": "作品集",
     "nav.blog": "部落格",
     "nav.shop": "商店",
-    "carousel.text01":"HELLO & WELCOME",
-    "carousel.text02":"插畫與委託合作",
-    "carousel.text03":"純藝術與展覽",
-    "portfolio.work1":"家家酒",
-    "portfolio.work2":"皮皮的飛船",
-    "portfolio.work3":"石虎樂園",
-    "portfolio.work4":"紅鳩寶寶",
-    "portfolio.work5":"升學主義",
-    "portfolio.work6":"愚人船",
+    "carousel.text01": "HELLO & WELCOME",
+    "carousel.text02": "插畫與委託合作",
+    "carousel.text03": "純藝術與展覽",
+    "portfolio.work1": "家家酒",
+    "portfolio.work2": "皮皮的飛船",
+    "portfolio.work3": "石虎樂園",
+    "portfolio.work4": "紅鳩寶寶",
+    "portfolio.work5": "升學主義",
+    "portfolio.work6": "愚人船",
     "about.text_top": `<p>
           <strong>關於 Pikazoo Chen（陳冠瑜）</strong><br>
           台灣出生，目前生活創作於台北。<br><br>
@@ -89,8 +93,13 @@ Please direct all project inquiries to Pikazoo Chen via email at: pikazoo.trucks
         </a>
         ISBN：978-8833645599，義大利波隆那：Edizioni Pendragon，2023。頁碼： 75；備註：作品被選用為書籍封面圖像。<br><br>
       </p>`,
-      "contact.text":`歡迎所有關於<strong>插畫委託</strong>、<strong>商業合作</strong>、<strong>展覽邀約</strong>，以及<strong>版權使用</strong>的需求與洽談。<br>
-          任何合作諮詢，請直接透過以下電子郵件聯繫 Pikazoo Chen：pikazoo.truckski@gmail.com`
+    "contact.text": `歡迎所有關於<strong>插畫委託</strong>、<strong>商業合作</strong>、<strong>展覽邀約</strong>，以及<strong>版權使用</strong>的需求與洽談。<br>
+          任何合作諮詢，請直接透過以下電子郵件聯繫 Pikazoo Chen：<a href="mailto:pikazoo.truckski@gmail.com">pikazoo.truckski@gmail.com</a>`,
+    "contact.shop_info": `我也經營 <a href="https://shop.pikazoochen.com?utm_source=home&utm_medium=referral&utm_campaign=home_shop_info" target="_blank"><strong>Pikazoo Chen Shop</strong></a> 線上商店，
+        販售以我的作品為主題的藝術印刷品和生活用品。<br>
+        商店採用<strong>按需印製 (Print-on-Demand)</strong> 方式生產，
+        只在收到訂單後才開始製作，減少浪費並確保品質。<br>
+        商店詢問與客服，請聯絡：<a href="mailto:service@pikazoochen.com">service@pikazoochen.com</a>`
   }
 };
 

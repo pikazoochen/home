@@ -42,8 +42,8 @@ a {
   padding-left: 32px;
 }
 
-#nav-links{
-  margin-left:auto;
+#nav-links {
+  margin-left: auto;
 }
 
 /* 共用選單樣式 */
@@ -69,21 +69,21 @@ a {
 }
 
 #nav-links a:hover {
-  background-color:#949494;
-  color:#ffffff;
+  background-color: #949494;
+  color: #ffffff;
 }
 
-#nav-links li.bg_gray{
-  background-color:#949494;
-  color:#ffffff;
+#nav-links li.bg_gray {
+  background-color: #949494;
+  color: #ffffff;
 }
 
-#nav-links a.bg_gray{
-  background-color:#949494;
-  color:#ffffff;
+#nav-links a.bg_gray {
+  background-color: #949494;
+  color: #ffffff;
 }
 
-#nav-links li{
+#nav-links li {
   cursor: pointer;
 }
 
@@ -92,10 +92,10 @@ a {
   display: none;
   font-size: 2em;
   cursor: pointer;
-  margin-left:auto;
+  margin-left: auto;
 }
 
-#nav_language{
+#nav_language {
   padding: 32px 16px 32px 8px;
   cursor: pointer;
 }
@@ -131,7 +131,7 @@ a {
     border-bottom: 1px solid #0000002e;
   }
 
-  #nav_language{
+  #nav_language {
     padding: 30px 32px 26px 0px;
   }
 
@@ -153,7 +153,7 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  #nav_language{
+  #nav_language {
     padding: 30px 16px 26px 0px;
   }
 }
@@ -564,9 +564,42 @@ li>a .gallery .gallery:hover {
   width: 45%;
 }
 
+.contact_info a {
+  color: #74957A;
+  text-decoration: none;
+}
+
+/* 新增:商店資訊區塊樣式 */
+.shop_info {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.shop_info h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.shop_info p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.shop_info a {
+  color: #74957A;
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   #contact {
     width: 100%;
+  }
+
+  .shop_info {
+    margin: 30px 4%;
+    padding: 20px;
   }
 }
 
@@ -586,7 +619,6 @@ li>a .gallery .gallery:hover {
     align-items: center;
     padding: 0 4%;
   }
-
 }
 
 #site-footer {
