@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /blog/authors/
+Disallow: /blog/categories/
+Disallow: /blog/tags/
+Disallow: /blog/series/
+
+Sitemap: https://pikazoochen.com/sitemap.xml
