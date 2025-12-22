@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
+    <loc>https://pikazoochen.com/main-sitemap.xml</loc>
+    <lastmod>2025-12-22T08:27:00+08:00</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>https://pikazoochen.com/blog/sitemap.xml</loc>
-    <lastmod>2025-12-21T13:01:19+00:00</lastmod>
+    <lastmod>2025-12-17T17:38:00+08:00</lastmod>
   </sitemap>
 </sitemapindex>
