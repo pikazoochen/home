@@ -3,8 +3,8 @@
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #fff;
-  color: #333;
+  background: #FAF9F6;
+  color: #4A3B32;
   line-height: 1.6;
 }
 
@@ -17,7 +17,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #ffffff;
+  background: #FAF9F6;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
@@ -36,9 +36,9 @@ a {
 #logo a {
   text-decoration: none;
   letter-spacing: 4px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 22px;
-  color: #292929;
+  color: #4A3B32;
   padding-left: 32px;
 }
 
@@ -61,7 +61,7 @@ a {
 
 #nav-links a {
   text-decoration: none;
-  color: #292929;
+  color: #4A3B32;
   font-weight: 400;
   letter-spacing: 3px;
   font-size: 16px;
@@ -69,18 +69,18 @@ a {
 }
 
 #nav-links a:hover {
-  background-color: #949494;
-  color: #ffffff;
+  background-color: #D65A31;
+  color: #FAF9F6;
 }
 
 #nav-links li.bg_gray {
-  background-color: #949494;
-  color: #ffffff;
+  background-color: #D65A31;
+  color: #FAF9F6;
 }
 
 #nav-links a.bg_gray {
-  background-color: #949494;
-  color: #ffffff;
+  background-color: #D65A31;
+  color: #FAF9F6;
 }
 
 #nav-links li {
@@ -113,7 +113,7 @@ a {
     top: 100%;
     left: 0;
     width: 100%;
-    background: #fff;
+    background: #FAF9F6;
     overflow: hidden;
     max-height: 0;
     opacity: 0;
@@ -128,7 +128,7 @@ a {
 
   #nav-links li {
     padding: 1em 2em;
-    border-bottom: 1px solid #0000002e;
+    border-bottom: 1px solid #f0d98e;
   }
 
   #nav_language {
@@ -142,7 +142,7 @@ a {
   #nav-links a:hover {
     border-bottom: none;
     background-color: transparent;
-    color: #292929;
+    color: #4A3B32;
   }
 
   /* 展開狀態 */
@@ -201,7 +201,7 @@ a {
   position: absolute;
   bottom: 20%;
   left: 10%;
-  color: #fff;
+  color: #FAF9F6;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
   max-width: 600px;
   font-family: "Montserrat", sans-serif;
@@ -224,7 +224,7 @@ a {
   transform: translateY(-50%);
   background: none;
   /* 透明背景 */
-  color: #ffffff;
+  color: #FAF9F6;
   border: none;
   font-size: 3rem;
   padding: 0.2em 0.4em;
@@ -293,7 +293,7 @@ a {
 }
 
 .carousel-dots .dot.active {
-  background: #fff;
+  background: #FAF9F6;
   transform: scale(1.3);
 }
 
@@ -313,7 +313,7 @@ a {
   display: flex;
   justify-content: center;
   margin: 50px auto;
-  color: #323232;
+  color: #4A3B32;
   font-family: "Montserrat", sans-serif;
   font-size: 35px;
   font-weight: 700;
@@ -399,7 +399,7 @@ a {
 
 .gallery li>div h3 {
   width: 100%;
-  color: #000;
+  color: #4A3B32;
   padding: 0 10px;
   font-size: 19px;
   font-weight: 600;
@@ -414,7 +414,7 @@ a {
   height: 3px;
   margin: 20px auto;
   margin-bottom: 0px;
-  background: #AEAEAE;
+  background:#D4AF37;
   display: block;
 }
 
@@ -477,8 +477,8 @@ li>a .gallery .gallery:hover {
   top: 100%;
   padding: 10px 7px 10px 15px;
   text-align: center;
-  color: #000;
-  border: 2px solid #000;
+  color: #4A3B32;
+  border: 2px solid #4A3B32;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -webkit-transition: border-color .3s ease-in-out, top .3s ease-in-out, letter-spacing .3s ease-in-out;
@@ -488,7 +488,7 @@ li>a .gallery .gallery:hover {
 
 .gallery li>div a.open-post:hover {
   letter-spacing: 5px;
-  color: #000;
+  color: #4A3B32;
   border-color: #36393c;
 }
 
@@ -566,7 +566,7 @@ li>a .gallery .gallery:hover {
 }
 
 .contact_info a {
-  color: #74957A;
+  color: #D65A31;
   text-decoration: none;
 }
 
@@ -574,13 +574,13 @@ li>a .gallery .gallery:hover {
 .shop_info {
   margin-top: 40px;
   padding: 30px;
-  background-color: #f8f8f8;
+  background-color: #F5F1E8;
   border-radius: 8px;
 }
 
 .shop_info h3 {
   margin-bottom: 15px;
-  color: #333;
+  color: #4A3B32;
 }
 
 .shop_info p {
@@ -589,7 +589,7 @@ li>a .gallery .gallery:hover {
 }
 
 .shop_info a {
-  color: #74957A;
+  color: #D65A31;
   text-decoration: none;
 }
 
@@ -625,6 +625,6 @@ li>a .gallery .gallery:hover {
 #site-footer {
   display: flex;
   justify-content: center;
-  background-color: #4b4b4b;
-  color: #ffffff;
+  background-color: #4A3B32;
+  color: #FAF9F6;
 }

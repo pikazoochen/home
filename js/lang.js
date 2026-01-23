@@ -39,7 +39,7 @@ const translations = {
 
         <strong>Publications</strong><br>
         Artwork: "Make Believe." In: Roberto Frabetti (Ed.), <a href="https://www.pendragon.it/catalogo/produzione-varia/varia/il-bambino-spettatore-children-spectator-detail.html"
-          target="_blank" style="color:#74957A;">Children Spectators: Il Bambino Spettatore </a>(ISBN: 978-8833645599). Bologna, Italy: Edizioni Pendragon, 2023. Page: 75; Note: Artwork selected for the book cover image.<br><br>
+          target="_blank" style="color:#D65A31;">Children Spectators: Il Bambino Spettatore </a>(ISBN: 978-8833645599). Bologna, Italy: Edizioni Pendragon, 2023. Page: 75; Note: Artwork selected for the book cover image.<br><br>
       </p>`,
     "contact.text": `<strong>Inquiries</strong><br>
 All requests regarding <strong>illustration commissions</strong>, <strong>commercial collaborations</strong>, <strong>exhibition opportunities</strong>, and <strong>licensing</strong> are welcome.<br>
@@ -88,7 +88,7 @@ Please direct all project inquiries to Pikazoo Chen via email at: <a href="mailt
         <strong>出版紀錄 (Publications)</strong><br>
         作品：《Make Believe》。載於： Roberto Frabetti 主編，
         <a href="https://www.pendragon.it/catalogo/produzione-varia/varia/il-bambino-spettatore-children-spectator-detail.html"
-          target="_blank" style="color:#74957A;">《Children Spectators: Il Bambino Spettatore》
+          target="_blank" style="color:#D65A31;">《Children Spectators: Il Bambino Spettatore》
         </a>
         ISBN：978-8833645599，義大利波隆那：Edizioni Pendragon，2023。頁碼： 75；備註：作品被選用為書籍封面圖像。<br><br>
       </p>`,
