@@ -93,7 +93,7 @@ Please direct all project inquiries to Pikazoo Chen via email at: <a href="mailt
         ISBN：978-8833645599，義大利波隆那：Edizioni Pendragon，2023。頁碼： 75；備註：作品被選用為書籍封面圖像。<br><br>
       </p>`,
     "contact.text": `歡迎所有關於<strong>插畫委託</strong>、<strong>商業合作</strong>、<strong>展覽邀約</strong>，以及<strong>版權使用</strong>的需求與洽談。<br>
-          任何合作諮詢，請直接透過以下電子郵件聯繫 Pikazoo Chen：<a href="mailto:pikazoo.truckski@gmail.com">pikazoo.truckski@gmail.com</a>`,
+          任何合作諮詢，請直接透過以下電子郵件聯繫 Pikazoo Chen：<a href="mailto:pikazoo.truckski@gmail.com">pikazoo.truckski@gmail.com</a><br><br>訂閱電子報，領取首購 95 折優惠：<a href="https://pikazoochen.com/newsletter/?utm_source=home&utm_medium=referral&utm_campaign=newsletter_signup&utm_content=contact_section" style="color: #D65A31; font-weight: bold;">[點此訂閱]</a>`,
     "contact.shop_info": `我也經營 <a href="https://shop.pikazoochen.com?utm_source=home&utm_medium=referral&utm_campaign=home_shop_info" target="_blank"><strong>Pikazoo Chen Shop</strong></a> 線上商店，
         販售少量手繪原作，以及以我的作品為主題的藝術印刷品和生活用品。<br>
         商店採用<strong>按需印製 (Print-on-Demand)</strong> 方式生產，
