@@ -39,12 +39,12 @@ const translations = {
 
         <strong>Publications</strong><br>
         Artwork: "Make Believe." In: Roberto Frabetti (Ed.), <a href="https://www.pendragon.it/catalogo/produzione-varia/varia/il-bambino-spettatore-children-spectator-detail.html"
-          target="_blank" style="color:#D65A31;">Children Spectators: Il Bambino Spettatore </a>(ISBN: 978-8833645599). Bologna, Italy: Edizioni Pendragon, 2023. Page: 75; Note: Artwork selected for the book cover image.<br><br>
+          target="_blank" rel="noopener noreferrer" style="color:#D65A31;">Children Spectators: Il Bambino Spettatore </a>(ISBN: 978-8833645599). Bologna, Italy: Edizioni Pendragon, 2023. Page: 75; Note: Artwork selected for the book cover image.<br><br>
       </p>`,
     "contact.text": `<strong>Inquiries</strong><br>
 All requests regarding <strong>illustration commissions</strong>, <strong>commercial collaborations</strong>, <strong>exhibition opportunities</strong>, and <strong>licensing</strong> are welcome.<br>
 Please direct all project inquiries to Pikazoo Chen via email at: <a href="mailto:pikazoo.truckski@gmail.com">pikazoo.truckski@gmail.com</a>`,
-    "contact.shop_info": `I also run <a href="https://shop.pikazoochen.com?utm_source=home&utm_medium=referral&utm_campaign=home_shop_info" target="_blank"><strong>Pikazoo Chen Shop</strong></a>, an online store featuring original hand-painted artworks, art prints, and lifestyle products based on my illustrations.<br>
+    "contact.shop_info": `I also run <a href="https://shop.pikazoochen.com?utm_source=home&utm_medium=referral&utm_campaign=home_shop_info" target="_blank" rel="noopener noreferrer"><strong>Pikazoo Chen Shop</strong></a>, an online store featuring original hand-painted artworks, art prints, and lifestyle products based on my illustrations.<br>
   The shop uses <strong>print-on-demand production</strong>, creating items only after orders are placed to reduce waste and ensure quality.<br>
   For shop inquiries and customer service: <a href="mailto:service@pikazoochen.com">service@pikazoochen.com</a>`
   },
@@ -88,13 +88,13 @@ Please direct all project inquiries to Pikazoo Chen via email at: <a href="mailt
         <strong>出版紀錄 (Publications)</strong><br>
         作品：《Make Believe》。載於： Roberto Frabetti 主編，
         <a href="https://www.pendragon.it/catalogo/produzione-varia/varia/il-bambino-spettatore-children-spectator-detail.html"
-          target="_blank" style="color:#D65A31;">《Children Spectators: Il Bambino Spettatore》
+          target="_blank" rel="noopener noreferrer" style="color:#D65A31;">《Children Spectators: Il Bambino Spettatore》
         </a>
         ISBN：978-8833645599，義大利波隆那：Edizioni Pendragon，2023。頁碼： 75；備註：作品被選用為書籍封面圖像。<br><br>
       </p>`,
     "contact.text": `歡迎所有關於<strong>插畫委託</strong>、<strong>商業合作</strong>、<strong>展覽邀約</strong>，以及<strong>版權使用</strong>的需求與洽談。<br>
           任何合作諮詢，請直接透過以下電子郵件聯繫 Pikazoo Chen：<a href="mailto:pikazoo.truckski@gmail.com">pikazoo.truckski@gmail.com</a><br><br>訂閱電子報，領取首購 95 折優惠：<a href="https://pikazoochen.com/newsletter/?utm_source=home&utm_medium=referral&utm_campaign=newsletter_signup&utm_content=contact_section" style="color: #D65A31; font-weight: bold;">[點此訂閱]</a>`,
-    "contact.shop_info": `我也經營 <a href="https://shop.pikazoochen.com?utm_source=home&utm_medium=referral&utm_campaign=home_shop_info" target="_blank"><strong>Pikazoo Chen Shop</strong></a> 線上商店，
+    "contact.shop_info": `我也經營 <a href="https://shop.pikazoochen.com?utm_source=home&utm_medium=referral&utm_campaign=home_shop_info" target="_blank" rel="noopener noreferrer"><strong>Pikazoo Chen Shop</strong></a> 線上商店，
         販售少量手繪原作，以及以我的作品為主題的藝術印刷品和生活用品。<br>
         商店採用<strong>按需印製 (Print-on-Demand)</strong> 方式生產，
         只在收到訂單後才開始製作，減少浪費並確保品質。<br>

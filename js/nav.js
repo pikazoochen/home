@@ -1,85 +1,75 @@
-// Intersection Observer 實現導航高亮
+// Scroll-based 導覽高亮 (scroll-spy)
 document.addEventListener("DOMContentLoaded", function () {
-  // 1. 定義要觀察的目標區塊 (Target Sections)
+  // 1. 定義目標區塊，順序由上到下
   const sections = [
     { id: 'portfolio', navId: 'nav_portfolio' },
     { id: 'about', navId: 'nav_about' },
     { id: 'contact', navId: 'nav_contact' }
   ];
 
-  // 獲取所有目標區塊的 DOM 元素
-  const observerTargets = sections
-    .map(section => document.getElementById(section.id))
-    .filter(el => el !== null);
-
   // 獲取所有導航元素 (<a> 和 <li>)
   const allNavItems = document.querySelectorAll('#nav-links a, #nav-links li');
-
-  // 2. 定義 Intersection Observer 的選項
-  const options = {
-    root: null,
-    rootMargin: '0px 0px -50% 0px',
-    threshold: 0
-  };
-
-  // 3. 處理 Intersection Observer 回調函數
-  const observerCallback = (entries) => {
-    entries.forEach(entry => {
-      const currentSectionId = entry.target.id;
-      const correspondingNavId = sections.find(s => s.id === currentSectionId)?.navId;
-
-      if (correspondingNavId) {
-        const correspondingNavLinkA = document.getElementById(correspondingNavId)?.querySelector('a');
-        const correspondingNavLinkLi = document.getElementById(correspondingNavId);
-
-        if (entry.isIntersecting) {
-          // 進入目標區塊：
-
-          // a. 清除所有導航元素的高亮
-          allNavItems.forEach(item => item.classList.remove('bg_gray'));
-
-          // b. 為當前連結 (<a>) 和父級列表項 (<li>) 添加高亮
-          if (correspondingNavLinkA) {
-            correspondingNavLinkA.classList.add('bg_gray');
-          }
-          if (correspondingNavLinkLi) {
-            correspondingNavLinkLi.classList.add('bg_gray');
-          }
-        }
-      }
-    });
-  };
-
-  // 4. 建立 Intersection Observer 實例
-  const observer = new IntersectionObserver(observerCallback, options);
-
-  // 5. 開始觀察所有目標區塊
-  observerTargets.forEach(target => {
-    observer.observe(target);
-  });
-
-  // 【針對 HOME 連結的特別處理】
   const navHomeLi = document.getElementById('nav_home');
   const navHomeLink = navHomeLi?.querySelector('a');
 
-  if (navHomeLink && navHomeLi) {
-    const toggleHomeHighlight = () => {
-      // 檢查捲動位置是否在頂部 (例如，小於 100px)
-      if (window.scrollY < 100) {
-        // 移除所有高亮
-        allNavItems.forEach(item => item.classList.remove('bg_gray'));
+  // 觸發線：必須 ≥ 點擊導覽時的最大捲動偏移量 (134px)
+  // Portfolio 捲到 top-84，About/Contact 捲到 top-134
+  // 設 140 (= 134 + 6 緩衝) 確保點擊後目標區塊一定通過觸發線
+  const TRIGGER_LINE = 140;
 
-        // 高亮 HOME 連結 (<a> 和 <li>)
-        navHomeLink.classList.add('bg_gray');
-        navHomeLi.classList.add('bg_gray');
+  // requestAnimationFrame 節流旗標
+  let ticking = false;
+
+  // 2. 核心函數：根據捲動位置決定高亮哪個區塊
+  function updateActiveNav() {
+    ticking = false;
+    const scrollY = window.scrollY;
+
+    // 找出「頂部已通過觸發線」的最後一個區塊
+    // 跳過 display:none 的區塊（例如初始隱藏的 About）
+    let activeSection = null;
+
+    for (const section of sections) {
+      const el = document.getElementById(section.id);
+      if (!el) continue;
+      if (window.getComputedStyle(el).display === 'none') continue;
+
+      const rect = el.getBoundingClientRect();
+      const sectionTop = rect.top + scrollY;
+
+      if (sectionTop - TRIGGER_LINE <= scrollY) {
+        activeSection = section;
       }
-    };
+    }
 
-    window.addEventListener('scroll', toggleHomeHighlight);
+    // 3. 清除所有高亮，只保留當前區塊
+    allNavItems.forEach(item => item.classList.remove('bg_gray'));
 
-    // 頁面載入時先執行一次
-    toggleHomeHighlight();
+    if (activeSection) {
+      const navLi = document.getElementById(activeSection.navId);
+      const navA = navLi?.querySelector('a');
+      navA?.classList.add('bg_gray');
+      navLi?.classList.add('bg_gray');
+    } else {
+      // 沒有區塊通過觸發線（例如在輪播區）→ 高亮 HOME
+      navHomeLink?.classList.add('bg_gray');
+      navHomeLi?.classList.add('bg_gray');
+    }
   }
+
+  // 4. 用 requestAnimationFrame 節流，避免 scroll 事件過度觸發
+  function onScroll() {
+    if (!ticking) {
+      requestAnimationFrame(updateActiveNav);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+
+  // 頁面載入時先執行一次
+  updateActiveNav();
 
   const menuToggle = document.getElementById("menu-toggle");
   const navLinks = document.getElementById("nav-links");
@@ -107,6 +97,8 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     navLinks.classList.remove("show");
     $('#about').show();
+    // About 顯示後版面變動，立即更新高亮狀態
+    updateActiveNav();
     $('html , body').animate({
       scrollTop: $('#about').offset().top - 134,
     }, 900);
@@ -132,13 +124,13 @@ $('#nav_contact').click(function (e) {
   $('#nav_blog').click(function (e) {
     e.preventDefault();
     navLinks.classList.remove("show");
-    window.open("https://pikazoochen.com/blog");
+    window.open("https://pikazoochen.com/blog", "_blank", "noopener,noreferrer");
   });
 
   $('#nav_shop').click(function (e) {
     e.preventDefault();
     navLinks.classList.remove("show");
-    window.open("https://shop.pikazoochen.com?utm_source=home&utm_medium=referral&utm_campaign=home_nav");
+    window.open("https://shop.pikazoochen.com?utm_source=home&utm_medium=referral&utm_campaign=home_nav", "_blank", "noopener,noreferrer");
   });
   
 });
